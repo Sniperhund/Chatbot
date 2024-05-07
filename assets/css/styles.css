@@ -128,6 +128,14 @@ nav .desktop {
     a:hover {
         color: var(--yellow-doff);
     }
+
+    li:nth-child(6) a {
+        color: var(--dark-blue);
+    }
+
+    li:nth-child(6) a:hover {
+        color: var(--dark-blue);
+    }
 }
 
 nav .mobile {
@@ -153,6 +161,118 @@ nav .mobile {
 
     nav .desktop {
         display: none;
+    }
+}
+
+#blob {
+    margin-left: auto;
+    max-width: 460px;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 0 0 22px #312272, 0 0 0 44px #241660;
+    background-color: var(--yellow-doff);
+    border-radius: 50%;
+}
+
+@keyframes moveDiv1 {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes moveDiv2 {
+    0% {
+        transform: translateX(10%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10%);
+    }
+}
+
+#question-graphic {
+    position: relative;
+
+    .box-1 {
+        position: absolute;
+        left: 125px;
+        top: 59px;
+
+        background-color: rgba(255, 255, 255, 0.45);
+        width: 299px;
+        height: 52px;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            height: 14px;
+            gap: 10px;
+            width: 200%;
+        }
+
+        span {
+            height: 100%;
+            background-color: tomato;
+            display: block;
+        }
+
+        div:nth-child(1) {
+            animation: moveDiv1 5s infinite linear;
+
+            span:nth-child(1) {
+                width: 175px;
+            }
+
+            span:nth-child(2) {
+                width: 150px;
+            }
+
+            span:nth-child(3) {
+                width: 75px;
+            }
+        }
+
+        div:nth-child(2) {
+            animation: moveDiv2 5s infinite linear;
+
+            span:nth-child(1) {
+                width: 50px;
+            }
+
+            span:nth-child(2) {
+                width: 100px;
+            }
+
+            span:nth-child(3) {
+                width: 200px;
+            }
+        }
+    }
+
+    .box-2 {
+        position: absolute;
+        left: 75px;
+        top: 275px;
+
+        background-color: white;
+        width: 299px;
+        height: 52px;
     }
 }
 

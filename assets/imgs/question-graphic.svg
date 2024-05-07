@@ -6,15 +6,6 @@
         <g id="Mask_group" data-name="Mask group">
           <path id="Ellipse_170" data-name="Ellipse 170" d="M120,1196.79a43,43,0,1,1,43,43A43,43,0,0,1,120,1196.79Z" fill="#5271ff"/>
         </g>
-        <g id="Group_9879" data-name="Group 9879">
-          <rect id="Rectangle_5883" data-name="Rectangle 5883" width="195.01" height="8" transform="translate(225 1170.79)" fill="#fff"/>
-          <rect id="Rectangle_5885" data-name="Rectangle 5885" width="123.62" height="8" transform="translate(225 1192.79)" fill="#fff"/>
-          <rect id="Rectangle_5887" data-name="Rectangle 5887" width="85.32" height="8" transform="translate(225 1214.79)" fill="#fff"/>
-          <rect id="Rectangle_5888" data-name="Rectangle 5888" width="85.32" height="8" transform="translate(319.02 1214.79)" fill="#fff"/>
-          <rect id="Rectangle_5889" data-name="Rectangle 5889" width="107.95" height="8" transform="translate(413.05 1214.79)" fill="#fff"/>
-          <rect id="Rectangle_5886" data-name="Rectangle 5886" width="163.67" height="8" transform="translate(357.33 1192.79)" fill="#fff"/>
-          <rect id="Rectangle_5884" data-name="Rectangle 5884" width="92.28" height="8" transform="translate(428.72 1170.79)" fill="#fff"/>
-        </g>
       </g>
       <path id="Vector_23" data-name="Vector 23" d="M475.519,1276.205l57.876,40.378v-40.378Z" fill="#e6eaff"/>
     </g>
@@ -24,15 +15,6 @@
         <g id="Mask_group-2" data-name="Mask group">
           <path id="Ellipse_170-2" data-name="Ellipse 170" d="M492,1413.49a43,43,0,1,1,43,43A43,43,0,0,1,492,1413.49Z" fill="#fcb6ba"/>
           <rect id="Untitled_design_2_1" data-name="Untitled design (2) 1" width="82.69" height="86" transform="translate(492.85 1383.6)" fill="none"/>
-        </g>
-        <g id="Group_9879-2" data-name="Group 9879">
-          <rect id="Rectangle_5883-2" data-name="Rectangle 5883" width="192.38" height="8" transform="translate(280.62 1387.49)" fill="#fff"/>
-          <rect id="Rectangle_5885-2" data-name="Rectangle 5885" width="121.95" height="8" transform="translate(351.05 1409.49)" fill="#fff"/>
-          <rect id="Rectangle_5887-2" data-name="Rectangle 5887" width="84.16" height="8" transform="translate(388.84 1431.49)" fill="#fff"/>
-          <rect id="Rectangle_5888-2" data-name="Rectangle 5888" width="84.16" height="8" transform="translate(296.08 1431.49)" fill="#fff"/>
-          <rect id="Rectangle_5889-2" data-name="Rectangle 5889" width="106.49" height="8" transform="translate(181 1431.49)" fill="#fff"/>
-          <rect id="Rectangle_5886-2" data-name="Rectangle 5886" width="161.46" height="8" transform="translate(181 1409.49)" fill="#fff"/>
-          <rect id="Rectangle_5884-2" data-name="Rectangle 5884" width="91.04" height="8" transform="translate(181 1387.49)" fill="#fff"/>
         </g>
       </g>
       <path id="Vector_24" data-name="Vector 24" d="M222.481,1492.9l-57.876,40.378V1492.9Z" fill="#ffe6e6"/>
