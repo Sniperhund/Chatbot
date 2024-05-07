@@ -176,7 +176,7 @@ nav .mobile {
 
 @keyframes moveDiv1 {
     0% {
-        transform: translateX(-10%);
+        transform: translateX(-20%);
     }
 
     50% {
@@ -184,21 +184,21 @@ nav .mobile {
     }
 
     100% {
-        transform: translateX(-10%);
+        transform: translateX(-20%);
     }
 }
 
 @keyframes moveDiv2 {
     0% {
-        transform: translateX(10%);
+        transform: translateX(-10%);
     }
 
     50% {
-        transform: translateX(0);
+        transform: translateX(-20%);
     }
 
     100% {
-        transform: translateX(10%);
+        transform: translateX(-10%);
     }
 }
 
@@ -210,7 +210,6 @@ nav .mobile {
         left: 125px;
         top: 59px;
 
-        background-color: rgba(255, 255, 255, 0.45);
         width: 299px;
         height: 52px;
         overflow: hidden;
@@ -228,7 +227,7 @@ nav .mobile {
 
         span {
             height: 100%;
-            background-color: tomato;
+            background-color: white;
             display: block;
         }
 
@@ -249,18 +248,38 @@ nav .mobile {
         }
 
         div:nth-child(2) {
-            animation: moveDiv2 5s infinite linear;
+            animation: moveDiv2 5.6s infinite linear;
 
             span:nth-child(1) {
-                width: 50px;
+                width: 150px;
             }
 
             span:nth-child(2) {
-                width: 100px;
+                width: 50px;
             }
 
             span:nth-child(3) {
                 width: 200px;
+            }
+        }
+
+        div:nth-child(3) {
+            animation: moveDiv2 4s infinite linear;
+
+            span:nth-child(1) {
+                width: 150px;
+            }
+
+            span:nth-child(2) {
+                width: 50px;
+            }
+
+            span:nth-child(3) {
+                width: 75px;
+            }
+
+            span:nth-child(4) {
+                width: 150px;
             }
         }
     }
@@ -270,9 +289,79 @@ nav .mobile {
         left: 75px;
         top: 275px;
 
-        background-color: white;
         width: 299px;
         height: 52px;
+
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            height: 14px;
+            gap: 10px;
+            width: 200%;
+        }
+
+        span {
+            height: 100%;
+            background-color: white;
+            display: block;
+        }
+
+        div:nth-child(1) {
+            animation: moveDiv2 5s infinite linear;
+
+            span:nth-child(1) {
+                width: 150px;
+            }
+
+            span:nth-child(2) {
+                width: 200px;
+            }
+
+            span:nth-child(3) {
+                width: 50px;
+            }
+        }
+
+        div:nth-child(2) {
+            animation: moveDiv1 4.5s reverse infinite linear;
+
+            span:nth-child(1) {
+                width: 150px;
+            }
+
+            span:nth-child(2) {
+                width: 25px;
+            }
+
+            span:nth-child(3) {
+                width: 75px;
+            }
+
+            span:nth-child(4) {
+                width: 150px;
+            }
+        }
+
+        div:nth-child(3) {
+            animation: moveDiv1 5.6s infinite linear;
+
+            span:nth-child(1) {
+                width: 125px;
+            }
+
+            span:nth-child(2) {
+                width: 100px;
+            }
+
+            span:nth-child(3) {
+                width: 175px;
+            }
+        }
     }
 }
 
@@ -571,12 +660,74 @@ header {
         max-width: 575px;
         max-height: 575px;
         width: 100%;
-        height: 100%;
         aspect-ratio: 1 / 1;
         border-radius: 50%;
-        right: 30px;
+        right: 75px;
         bottom: -40%;
     }
+    .animation {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        animation: l11 7s infinite linear;
+        border-radius: 50%;
+    }
+    span {
+        position: absolute;
+        background-color: var(--yellow-doff);
+        width: 50px;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        display: block;
+    }
+    span:nth-child(1) {
+        top: calc(100% + 3px);
+        left: calc(50% - 25px);
+    }
+    span:nth-child(2) {
+        top: -53px;
+        left: calc(50% - 25px);
+    }
+    span:nth-child(3) {
+        top: calc(50% - 25px);
+        left: -53px;
+    }
+    span:nth-child(4) {
+        top: calc(50% - 25px);
+        right: -53px;
+    }
+}
+
+@keyframes l11 {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    box-shadow: 0 0 0 3px #fff inset;
+    border-radius: 50%;
+    position: relative;
+    animation: l11 7s infinite;
+}
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 3px);
+    left: calc(50% - 12.5px);
+    box-shadow: inherit;
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform-origin: 50% -28px;
+    animation: l11 1.5s infinite;
+}
+.loader:after {
+    animation-delay: -0.75s;
 }
 
 @media screen and (max-width: 1150px) {
